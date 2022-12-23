@@ -28,7 +28,7 @@ server.get("/*", (req, res) =>
 server.use((req, res) => res.status(404).end());
 
 server.use((err, req, res, next) => {
-  console.log("There is an error!", err);
+  console.log("There is an error!!!", err);
   res.status(500).send("It's not because of you, it's because of me...");
 });
 
